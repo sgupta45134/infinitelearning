@@ -1,0 +1,89 @@
+/* Min width media query */
+@media (min-width: 576px) {
+    #page.drawers .main-inner {
+        margin-top: 0;
+    }
+}
+@media (min-width: 768px) {
+    .pagelayout-standard #page.drawers .main-inner, body.limitedwidth #page.drawers .main-inner, .header-maxwidth {
+        max-width: 100%;
+    }
+    .activity-item:not(.activityinline) {
+        padding: 0.5rem;
+    }
+}
+@media (min-width: 992px) {
+    #page.drawers {
+        height: calc(100vh - 72px);
+        &.show-drawer-right, &.show-drawer-left.show-drawer-right {
+            margin-right: 330px;
+        }
+    }
+    .drawer-left, .drawer-right {
+        top: 72px; height: calc(100vh - 72px);
+    }
+}
+@media (min-width: 1200px) {
+}
+
+/* Max width media query */
+@media (max-width: 1199.98px) {
+    #page-login-signup .signupform, #page-login-forgot_password .login-wrapper-box div[role="main"] {
+        max-width: 60%;
+    }     
+}
+@media (max-width: 991.98px) { 
+    #page-login-signup .signupform, #page-login-forgot_password .login-wrapper-box div[role="main"] {
+        max-width: 70%;
+    } 
+}
+@media (max-width: 767.98px) {
+    .drawer-toggles .drawer-right-toggle, .drawer-toggles .drawer-left-toggle {
+        top: calc(99vh - (50px * 2.5));
+    }
+    #page-login-signup .signupform, #page-login-forgot_password .login-wrapper-box div[role="main"] {
+        max-width: 80%;
+    } 
+}
+@media (max-width: 575.98px) {
+    .main-header .site-logo img {
+        max-height: 38px;
+    }
+    .loginform-container .loginform {
+        width: 86%;
+    }
+    .main-header.navbar {
+        padding-left: 5px; padding-right: 5px;
+    }
+    .navbar.fixed-top .usermenu .dropdown .dropdown-toggle {
+        padding: 0;
+    }
+    .navbar.fixed-top .divider {
+        margin-right: 0.5rem !important;
+    }
+    .coursebox .content > .d-flex {
+        flex-direction: column;
+    }
+    #page-login-signup .signupform, #page-login-forgot_password .login-wrapper-box div[role="main"] {
+        max-width: 90%; padding: 20px;
+    } 
+}
+
+/* Only width media query */
+@media (max-width: 575.98px) {
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+@media (min-width: 1200px) {
+}
+@media (max-width: 576px) and (max-height: 320px) {
+}
+@media (max-width: 420px) {
+    .main-header .site-logo img {
+        max-height: 32px;
+    }
+}

@@ -1,0 +1,385 @@
+/***** Initial Start Here *****/
+body {
+    font-family: 'Nunito', sans-serif; color: #212529; font-size: 16px; font-weight: 500; line-height: 24px; background: #fff;
+}
+a, .btn-link { 
+    color: #06a1ac;
+    &:hover { color: #000; }
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    color: #000;
+}
+h1, .h1, h2, .h2 {
+    font-weight: 800;
+}
+h3, .h3 {
+    font-weight: 700;
+}
+h4, .h4 {
+    font-weight: 600;
+}
+h5, .h5 {
+    font-weight: 500;
+}
+h6, .h6 {
+    font-weight: 400;
+}
+/***** End Here *****/
+
+/***** Header / Content / Footer Start Here *****/
+.main-header {
+    color: #000;
+    &.navbar {
+        height: 72px; min-height: 72px; align-items: center; box-shadow: 0 2px 4px rgb(0 0 0 / 8%); background-color: $header-bg;
+    }
+    .site-logo {
+        img { max-height: 52px; }
+    }    
+    .primary-navigation {
+        .navigation, .nav-link  {
+            height: 72px;
+        }
+    }
+    .moremenu .nav-link.active:focus, .moremenu .nav-link.active:hover, .moremenu .nav-link:hover, .moremenu .nav-link:focus {
+        background-color: transparent;
+    }
+    &.navbar-light .navbar-nav {
+        .nav-link {
+            color: rgba(0,0,0,1);
+            &:hover, &:focus {
+                color: rgba(0,0,0,.6);
+            }
+        }
+    }
+    .userinitials {
+        background-color: #fff; margin-right: 0;
+    }
+}
+.navbar.fixed-top .dropdown .dropdown-menu {
+    max-height: calc(100vh - 72px);
+}
+.navbar.fixed-top .usermenu .dropdown .dropdown-toggle {
+    padding-left: 0.5rem; padding-right: 0.5rem;
+}
+.custom-switch .custom-control-label::after, .custom-switch .custom-control-input:checked~.custom-control-label::after {
+    background-color: #faefef;
+}
+.custom-control-label::before, .custom-control-input:checked~.custom-control-label::before {
+    background-color: #000; border: #000 solid 1px;
+}
+.editmode-switch-form .text-primary {
+    color: #000 !important;
+}
+/***** End Here *****/
+
+/***** Content Start Here *****/
+.courseindex .courseindex-item.pageitem, .courseindex .courseindex-item.pageitem:hover, 
+.courseindex .courseindex-item.pageitem:focus, .list-group-item.active {
+    background-color: #d1d1d1; color: #000; border-radius: 0;
+}
+.courseindex .courseindex-item.pageitem a {
+    color: #000;
+}
+.coursebox>.info>.coursename {
+    font-size: 18px; font-weight: 600;
+}
+.secondary-navigation {
+    max-width: 100%;
+}
+.course-content {
+    margin-top: 2rem;
+}
+.course-content ul li.section.main {
+    margin-bottom: 3rem; padding: 1rem; box-shadow: 3px 0px 6px rgb(105 97 97 / 10%), 0 3px 6px rgb(0 0 0 / 10%);
+}
+.course-content ul .child-section li.section.main {
+    padding: 0; margin-top: 2rem; margin-bottom: 0; box-shadow: none;
+}
+.course-content ul .child-section li.section.main .progress {
+    display: none !important;
+}
+.course-content li.section.main .progress {
+    margin: -1rem -1rem 1rem -1rem; border-radius: 0; height: 5px; background-color: #776e6e;
+}
+.course-content li.section.main .progress-bar {
+    background-color: #f7931e;
+}
+.activity-item:not(.activityinline) {
+    border: none; border-top: 1px solid #ddd; padding: 0.5rem;
+}
+.section .activity {
+    padding: 0;
+}
+.activityiconcontainer {
+    background-color: #f8f9fa !important;
+}
+img.activityicon {
+    filter: none !important;
+}
+.path-my .page-header-headings {
+    display: none !important;
+}
+.flexsections .parent-section > li > .course-section-header .icons-collapse-expand > span,
+.activity-instance .media-body > .text-uppercase {
+    display: none !important;
+}
+.flexsections .parent-section > li > .course-section-header .icons-collapse-expand {
+    width: 0; height: 0;
+}
+.flexsections .parent-section > li > .course-section-header .icons-collapse-expand:hover, 
+.flexsections .parent-section > li > .course-section-header .icons-collapse-expand:focus {
+    background-color: transparent;
+}
+.activityiconcontainer {
+    background-color: transparent !important; padding: 0 !important;
+}
+.activity-instance .activityiconcontainer {
+    margin-right: 0.25rem !important;
+}
+.activityiconcontainer .activityicon, .activityiconcontainer .icon {
+    width: 30px; height: 30px;
+}
+#frontpage-available-course-list .coursebox, #frontpage-course-list .coursebox, .course-search-result .coursebox {
+    margin-bottom: 1rem;
+}
+#frontpage-available-course-list .coursebox.even, #frontpage-course-list .coursebox.even, .course-search-result .coursebox.even {
+    background-color: #f7f7f7;
+}
+.coursebox .content .courseimage img {
+    max-width: 200px; max-height: 200px;
+}
+.custom-grey-out {
+    opacity: 0.5;
+}
+/***** End Here *****/
+
+/***** Block Start Here *****/
+.block {
+    background-color: $block-bg; margin-bottom: 30px; border: none; border-radius: 0;
+    .card-title {
+        font-weight: 700;
+    }
+    .card-body {
+        padding: 0;
+    }
+    &.block_settings {
+        #settingsnav {
+            padding-top: 0 !important;
+        }
+    }
+    .action-menu .menubar {
+        align-items: center;
+    }
+}
+.block_navigation, .block_settings {
+    .block_tree {
+        &.list > li > ul {
+            padding-left: 0;
+        }
+        .tree_item.branch {
+            margin-left: 5px; padding-left: 0.75rem;
+        }
+        p.hasicon {
+            text-indent: 0; padding-left: 0.75rem;
+            .icon {
+                margin-right: 5px;
+            }
+        }
+        ul {
+            margin-left: 0.25rem; padding-left: 1rem;
+        }
+    }
+    .root_node, .navigation_node {
+        margin-left: 0 !important;
+        padding-left: 0 !important;
+    }
+}
+.columnbottom {
+    .block {
+        background-color: #fff; padding: 0;
+        .card-body .card-title {
+            font-size: 24px;
+        }
+    }
+}
+.drawers .block_myoverview>.card-body {
+    padding: 1rem !important;
+}
+#block-region-content .block {
+    background-color: #fff;
+}
+/***** End Here *****/
+
+
+/***** Login Start Here *****/
+.path-login #page-footer, #page-login-index .main-header {
+    display: none !important;
+}
+#page-login-signup .signupform, #page-login-forgot_password .login-wrapper-box div[role="main"] {
+    max-width: 50%; margin: 15px auto; padding: 1.5rem; background-color: rgba(255,255,255,.85); 
+    box-shadow: 0 -4px 11px 5px rgb(0 0 0 / 20%); position:  relative; z-index: 1;
+}
+#page-login-signup, #page-login-forgot_password {
+    background-color: $login-bg; 
+    .login-wrapper-box {
+        margin-top: 82px; margin-bottom: 15px;
+    }
+}
+#page-login-index {
+    background-color: $login-bg; background-size: cover; background-image: url([[pix:theme|login-bg]]); background-position: center;
+    div[role="main"] {
+        height: 100%;
+    }
+    &::after {
+        content: ""; position: fixed; left: 0; right: 0; top: 0; bottom: 0; width: 100%; height: 100%;
+        background-color: rgba(0,0,0,.4);
+    }
+    .login-wrapper-box {
+        height: 100%;
+    }
+}
+#page-login-index .loginform-container-box {
+    height: 100%; display: flex; flex-direction: column;
+}
+.loginform-container { 
+    flex: 1 0 auto;   
+    .loginform {
+        max-width: 480px; margin: 2rem auto; padding: 1.5rem; background-color: rgba(255,255,255,.85); 
+        box-shadow: 0 -4px 11px 5px rgb(0 0 0 / 20%); position:  relative; z-index: 1;
+    }
+    .form-control {
+        height: calc(1.5em + 0.75rem + 1px); border-radius: 0;
+    }
+    .login-divider {
+        margin-top: 0.5rem; margin-bottom: 0.5rem; border-top: 1px solid #dee2e6; 
+    }
+    .login-logo {
+        text-align: center; margin-bottom: 2rem;
+        img {
+            max-height: 74px;
+        }
+    }
+    .login-form-password {
+        position: relative;
+        .toggle-password {
+            position: absolute; right: 0; top: 0; background-color: #d1d1d1; padding: 13px 15px;
+        }
+    }
+}
+.login-form-submit {
+    display: flex; align-items: center;
+    .btn {
+        background-color: #f7931e; border-color: #000; border-radius: 0; font-weight: 800; margin-left: auto;
+    }
+}
+.login-form-forgotpassword {
+    font-size: 18px; font-weight: 700;
+}
+.login-languagemenu .action-menu .dropdown-toggle {
+    color: #000;
+}
+.login-languagemenu .dropdown-item:active, .login-languagemenu .dropdown-item:hover, 
+.login-languagemenu .dropdown-item:focus, .login-languagemenu .dropdown-item:focus-within {
+    background-color: #d1d1d1; color: #000;
+}
+.companyinfo-box {
+    background-color: rgba(255,255,255,.85); box-shadow: 0 -4px 11px 5px rgb(0 0 0 / 20%); position:  relative; z-index: 1;
+    flex-shrink: 0;
+}
+/***** End Here *****/
+
+
+/***** Table *****/
+.table th, .generaltable th {
+    padding: 1rem 0.65rem;
+}
+.table td, .generaltable td {
+    padding: .65rem;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0,0,0,.05);
+}
+.generaltable.table-sm th, .generaltable.table-sm td {
+    padding: .5rem;
+}
+.generaltable {
+    border: 1px solid #dee2e6;
+}
+.generaltable th, .generaltable td {
+    border: 1px solid #dee2e6;
+}
+/***** End Here *****/
+
+/***** Miscellaneous *****/
+.maincalendar .calendarmonth td, .maincalendar .calendarmonth th {
+    border: 1px dotted #ccc;
+}
+.calendar-controls .current {
+    font-weight: 800;
+}
+#course-category-listings .listitem[data-selected="1"] {
+    border-left: calc(1px + 5px) solid #000;
+}
+.moremenu {
+    .nav-link {
+        border-bottom: solid 4px transparent;
+        &.active, &.active:focus, &.active:hover {
+            border-bottom-color: #06a1ac;
+        }
+    }
+}
+.drawer-toggles .drawer-toggler {
+    top: calc(72px + 0.7rem);
+    .btn {
+        background-color: #06a1ac; color: #fff;
+    }
+}
+#page.drawers {
+    margin-top: 72px;
+}
+.drawer {
+    &.drawer-right {
+        background-color: #fff;
+    }
+    &.drawer-left {
+        background-color: #e5e5e5;
+    }
+}
+.form-control {
+    height: calc(1.5em + 0.75rem + 6px);
+}
+.btn-primary {
+    background-color: $primarybtn-bg; 
+    border-color: $primarybtn-bg;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary.focus {
+    background-color: $primarybtn-bg; 
+    border-color: $primarybtn-bg;
+}
+.dropdown-item:active, .dropdown-item:hover, .dropdown-item:focus, .dropdown-item:focus-within, 
+.maincalendar .calendarmonth td.today .day-number-circle {
+    background-color: #06a1ac;
+}
+.aabtn.focus, .aabtn:focus, .btn-link.focus, .btn-link:focus, .nav-link.focus, .nav-link:focus, 
+.editor_atto_toolbar button.focus, .editor_atto_toolbar button:focus, .editor_atto_toolbar .atto_toolbar_row.focus, 
+.editor_atto_toolbar .atto_toolbar_row:focus, [role="button"].focus, [role="button"]:focus, 
+.list-group-item-action.focus, .list-group-item-action:focus, input[type="checkbox"].focus, 
+input[type="checkbox"]:focus, input[type="radio"].focus, input[type="radio"]:focus, 
+input[type="file"].focus, input[type="file"]:focus, input[type="image"].focus, 
+input[type="image"]:focus, .sr-only-focusable.focus, .sr-only-focusable:focus, a.dropdown-toggle.focus, 
+a.dropdown-toggle:focus, .modal-dialog[tabindex="0"].focus, .modal-dialog[tabindex="0"]:focus, 
+.moodle-dialogue-base .closebutton.focus, .moodle-dialogue-base .closebutton:focus, button.close.focus, 
+button.close:focus, .form-autocomplete-selection.focus, .form-autocomplete-selection:focus, 
+[role="treeitem"]:not([aria-expanded="true"]).focus, [role="treeitem"]:not([aria-expanded="true"]):focus {
+    /*box-shadow: 0 0 0 0.2rem rgb(0 0 0 / 50%);*/ box-shadow: none;
+}
+.btn.btn-icon:hover, .btn.btn-icon:focus {
+    background-color: #e5e5e5;
+}
+.btn-outline-secondary {
+    background-color: #f3f3f3;
+}
+div[data-region="completion-info"] .btn-success {
+    background-color: #f7931e; border-color: #da7c0d;
+}
+/***** End Here *****/
